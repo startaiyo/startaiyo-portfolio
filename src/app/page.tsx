@@ -1,37 +1,93 @@
-"use client";
+'use client';
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { TabButton } from "./components/tabButton";
 
 export default function Home() {
+  const [activeTab, setActiveTab] = useState<string>("A");
   useEffect(() => {
     scrollFadeIn();
   }, []);
 
+  const tabChange = () => {
+    switch (activeTab) {
+      case "A":
+        return <A></A>
+      default:
+        return <B></B>
+    }
+  }
+
+  const A = () => {
+    return <div className="text-white">a</div>
+  }
+
+  const B = () => {
+    return <div className="text-white">b</div>
+  }
+
   return (
     <>
-      <a href="#" className="block max-w-almost-full mx-auto p-6 bg-white border border-gray-100 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Startaiyo&apos;s portfolio</h5>
-      </a>
-
-      <div className="p-4 js-show-on-scroll">
-        <div className="h-screen bg-gray-300 p-4">What&apos;s this page</div>
-        <div className="h-screen bg-gray-600 p-4 my-4 js-show-on-scroll">
-          Who am I?
-        </div>
-
-        <div className="grid grid-cols-2 gap-4 my-4">
-          <div className="bg-red-500 p-4 h-64 text-white js-show-on-scroll">
-            <h1>Startaiyo&apos;s history</h1>
+      <div className="bg-backgroundImage bg-cover min-h-screen">
+        <div className="bg-opacity-80 p-8 rounded-lg">
+          <div className="bg-center bg-no-repeat bg-imageTitle h-80 text-3xl font-bold mb-8 bg-cover flex justify-center items-center text-center">
+            Startaiyo's Portfolio
           </div>
 
-          <div className="bg-green-500 p-4 h-64 text-white js-show-on-scroll">
-            <h1>What&apos;s I&apos;ve done</h1>
+          <div className="flex justify-center gap-4 mb-8">
+            {
+              ["A", "B", "C"].map((e) => {
+                return (
+                  <TabButton key={e} name={e} isActive={activeTab === e} onClick={() => {setActiveTab(e)}}/>
+                )
+              })
+            }
           </div>
-        </div>
 
-        <div className="h-screen bg-gray-300 p-4 my-4 js-show-on-scroll">
-          My will
+          <div>{tabChange()}</div>
+
+          <div className="p-4 grid grid-cols-1 gap-10 js-show-on-scroll">
+            <div className="bg-gray-800 p-4 rounded-lg text-white h-80 js-show-on-scroll">
+              <h1 className="text-2xl font-bold mb-8">What's this page</h1>
+              <p>What's this page description...</p>
+            </div>
+
+            <div className="bg-gray-700 p-4 rounded-lg text-white h-80 js-show-on-scroll">
+              <h1 className="text-2xl font-bold mb-4">Who am I?</h1>
+              <p>Who am I description...</p>
+            </div>
+
+            <div className="bg-gray-800 p-4 rounded-lg text-white h-80 js-show-on-scroll">
+              <h1 className="text-2xl font-bold mb-4">Startaiyo's History</h1>
+              <ul className="list-disc pl-4">
+                <li>1998 born in Japan</li>
+                <li>2023 graduated from university</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-700 p-4 rounded-lg text-white h-80 js-show-on-scroll">
+              <h1 className="text-2xl font-bold mb-4">What I've Done</h1>
+              <div className="flex flex-col gap-4">
+                <a
+                  href="https://Eput.com"
+                  className="bg-green-500 p-4 rounded-lg text-white hover:bg-green-600"
+                >
+                  Create Eput App
+                </a>
+                <a
+                  href="https://company.com"
+                  className="bg-blue-500 p-4 rounded-lg text-white hover:bg-blue-600"
+                >
+                  Working at Company
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-gray-800 p-4 rounded-lg text-white h-80 js-show-on-scroll">
+              <h1 className="text-2xl font-bold mb-4">My Will</h1>
+              <p>My will description...</p>
+            </div>
+          </div>
         </div>
       </div>
     </>

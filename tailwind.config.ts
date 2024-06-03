@@ -12,9 +12,8 @@ const config: Config = {
         "almost-full": "95%",
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'backgroundImage': "url('./static/backgroundImage.png')",
+        'imageTitle': "url('./static/titleImage.png')",
       },
       animation: {
         slideIn: "slideIn 1s ease-in forwards",
