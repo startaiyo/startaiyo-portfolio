@@ -8,8 +8,8 @@ interface Props {
 
 export const TabButton = (props: Props) => {
     return (<button
-            className={`bg-gray-800 w-24 h-8 rounded-full focus:outline-none ${
-                props.isActive ? "bg-gray-600" : ""
+            className={`w-24 h-8 rounded-full focus:outline-none ${
+                props.isActive ? "bg-white" : "bg-gray-800"
             }`}
             onClick={(e) => {
                 e.preventDefault();
