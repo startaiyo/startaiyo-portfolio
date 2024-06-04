@@ -37,7 +37,7 @@ export default function Home() {
       <div className="bg-backgroundImage bg-cover min-h-screen">
         <div className="bg-opacity-80 p-8 rounded-lg">
           <div className="bg-center bg-no-repeat bg-imageTitle h-80 text-3xl font-bold mb-8 bg-cover flex justify-center items-center text-center">
-            Startaiyo's Portfolio
+            Startaiyo&apos;s Portfolio
           </div>
 
           <div className="flex justify-center gap-4 mb-8">
