@@ -1,7 +1,7 @@
 export const About = () => {
   return (
     <>
-      <div className="bg-gray-800 p-4 rounded-lg text-white h-80 js-show-on-scroll items-center">
+      <div className="bg-gray-800 p-4 rounded-lg text-white h-80 js-show-on-scroll items-center max-w-4xl mx-auto js-show-on-scroll">
         <h1 className="text-2xl font-bold text-center">What&apos;s this page</h1>
         <h2 className="font-bold mb-8 text-center">このサイトについて</h2>
 

@@ -13,7 +13,7 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<string>(tabs[0]);
   useEffect(() => {
     scrollFadeIn();
-  }, []);
+  }, [activeTab]);
 
   const tabChange = () => {
     switch (activeTab) {
@@ -50,7 +50,7 @@ export default function Home() {
             }
           </div>
 
-          <div>{tabChange()}</div>
+          <div className="w-full">{tabChange()}</div>
 
           
         </div>
