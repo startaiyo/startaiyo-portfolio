@@ -5,9 +5,10 @@ interface Props {
 }
 
 export const TabButton = (props: Props) => {
-    return (<button
-            className={`w-24 h-8 rounded-full focus:outline-none ${
-                props.isActive ? "bg-white" : "bg-gray-800"
+    return (
+        <a
+            className={`w-40 h-20 focus:outline-none flex items-center justify-center font-bold ${
+                props.isActive ? "text-gray-50/50" : "text-white"
             }`}
             onClick={(e) => {
                 e.preventDefault();
@@ -15,6 +16,6 @@ export const TabButton = (props: Props) => {
             }}
         >
             {props.name}
-        </button>
+        </a>
     );
 }

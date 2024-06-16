@@ -9,8 +9,7 @@ export const Introduction = () => {
   return (
     <div className="space-y-60">
       <div className="p-4">
-        <a
-          href="#"
+        <div
           className="mx-auto flex flex-col items-center bg-white max-w-screen-lg border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
         >
           <div className="">
@@ -28,11 +27,10 @@ export const Introduction = () => {
               Born in 1998 in Tsukuba, Ibaraki pref.
             </p>
           </div>
-        </a>
+        </div>
       </div>
       <div className="js-show-on-scroll">
-        <a
-          href="#"
+        <div
           className="mx-auto flex items-center bg-white max-w-screen-lg border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 justify-end"
         >
           <div className="mx-auto">
@@ -67,11 +65,10 @@ export const Introduction = () => {
               className="object-cover h-96 md:h-auto md:w-48 rounded-b-lg"
             />
           </div>
-        </a>
+        </div>
       </div>
       <div className="js-show-on-scroll">
-        <a
-          href="#"
+        <div
           className=" h-96 w-full mx-auto flex items-center bg-white max-w-screen-lg border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
         >
           <div className="mx-auto">
@@ -94,11 +91,10 @@ export const Introduction = () => {
               <span className="font-bold">Used in hobby:</span> {'Python, PHP(Laravel), Golang, GCP, Vue.js etc'}
             </p>
           </div>
-        </a>
+        </div>
       </div>
       <div className="js-show-on-scroll">
-        <a
-          href="#"
+        <div
           className=" h-96 w-full mx-auto flex items-center bg-white max-w-screen-lg border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
         >
           <div className="mx-auto">
@@ -121,7 +117,7 @@ export const Introduction = () => {
               Studying English, design and cooking...
             </p>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   );
