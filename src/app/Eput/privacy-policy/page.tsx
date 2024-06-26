@@ -3,14 +3,14 @@ export default function Page() {
         <div style={styles.container}>
             <h1 style={styles.heading}>Privacy Policy</h1>
             <p style={styles.paragraph}>
-                This privacy policy applies to the Eput app (hereby referred to as "Application") for mobile devices that was created by startaiyo (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".
+                This privacy policy applies to the Eput app (hereby referred to as &quot;Application&quot;) for mobile devices that was created by startaiyo (hereby referred to as &quot;Service Provider&quot;) as a Free service. This service is intended for use &quot;AS IS&quot;.
             </p>
             <h2 style={styles.subheading}>Information Collection and Use</h2>
             <p style={styles.paragraph}>
                 The Application collects information when you download and use it. This information may include information such as
             </p>
             <ul style={styles.list}>
-                <li>Your device's Internet Protocol address (e.g. IP address)</li>
+                <li>Your device&apos;s Internet Protocol address (e.g. IP address)</li>
                 <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li>
                 <li>The time spent on the Application</li>
                 <li>The operating system you use on your mobile device</li>
@@ -18,7 +18,7 @@ export default function Page() {
             <p style={styles.paragraph}>The Application does not gather precise information about the location of your mobile device.</p>
             <div style={{ display: 'none' }}>
                 <p style={styles.paragraph}>
-                    The Application collects your device's location, which helps the Service Provider determine your approximate geographical location and make use of in below ways:
+                    The Application collects your device&apos;s location, which helps the Service Provider determine your approximate geographical location and make use of in below ways:
                 </p>
                 <ul style={styles.list}>
                     <li>Geolocation Services: The Service Provider utilizes location data to provide features such as personalized content, relevant recommendations, and location-based services.</li>
@@ -50,7 +50,7 @@ export default function Page() {
             </p>
             <h2 style={styles.subheading}>Data Retention Policy</h2>
             <p style={styles.paragraph}>
-                The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at starsunyo0104@gmail.com and they will respond in a reasonable time.
+                The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you&apos;d like them to delete User Provided Data that you have provided via the Application, please contact them at starsunyo0104@gmail.com and they will respond in a reasonable time.
             </p>
             <h2 style={styles.subheading}>Children</h2>
             <p style={styles.paragraph}>
@@ -58,7 +58,7 @@ export default function Page() {
             </p>
             <div>
                 <p style={styles.paragraph}>
-                    The Service Provider does not knowingly collect personally identifiable information from children. The Service Provider encourages all children to never submit any personally identifiable information through the Application and/or Services. The Service Provider encourage parents and legal guardians to monitor their children's Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to the Service Provider through the Application and/or Services, please contact the Service Provider (starsunyo0104@gmail.com) so that they will be able to take the necessary actions. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).
+                    The Service Provider does not knowingly collect personally identifiable information from children. The Service Provider encourages all children to never submit any personally identifiable information through the Application and/or Services. The Service Provider encourage parents and legal guardians to monitor their children&apos;s Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to the Service Provider through the Application and/or Services, please contact the Service Provider (starsunyo0104@gmail.com) so that they will be able to take the necessary actions. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).
                 </p>
             </div>
             <h2 style={styles.subheading}>Security</h2>
